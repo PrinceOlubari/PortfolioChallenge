@@ -17,7 +17,26 @@ p {
   margin: 0;
 }
 
+
+
 .container{
 display: grid;
 grid-template-columns: 25% 75%;
+border-inline-style:solid blue;
 }
+
+.workgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 50px 50px;
+  grid-template-areas: 
+  "surf surf"
+  "led calculator"
+  "pastel RunBuddy";
+}
+
+#surf{
+  grid-area: surf;
+  background-image: url(/images/02-portfolio-4.jpg);
+}
+
